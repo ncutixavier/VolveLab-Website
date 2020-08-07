@@ -1,9 +1,115 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ABeeZee";
 }
 
-html{
-    font-size: 10px;
+html {
+  font-size: 10px;
+}
+
+/* ****************************H O M E P A G E******************* */
+.home {
+  background-image: url(../img/homepage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 7%;
+}
+
+.navbar-logo img {
+  width: 150px;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar-list span a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.hp-content{
+    height: 85vh;
+    padding-left: 6%;
+    margin: 10% 0 0 0;
+}
+
+.hp-content h1 {
+  font-family: Passion One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10rem;
+  letter-spacing: 1.5rem;
+  color: #ffffffb3;
+}
+
+.hp-content h4 {
+  font-family: Passion One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  letter-spacing: .6rem;
+  color: #ffffffb3;
+  padding-left: 1%;
+}
+
+.hp-content div{
+    padding-left: 1%;
+    margin-top: 5%;
+}
+
+.hp-content div a {
+  background: #ffffffe6;
+  padding: 1.5rem 6rem;
+  font-family: Passion One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 46px;
+  letter-spacing: 0.055em;
+  text-decoration: none;
+  color: #000;
+  border-radius: 20rem;
+}
+
+.hp-content div a:hover{
+    background-color: #000;
+    color: #fff;
+}
+/* ********************************************************* */
+
+.about {
+  background-image: url(../img/about.png);
+  height: 100vh;
+}
+.service {
+  background-color: cadetblue;
+  height: 100vh;
+}
+.follow {
+  background-color: darkgoldenrod;
+  height: 100vh;
+}
+.work {
+  background-color: darkkhaki;
+  height: 100vh;
+}
+.contact {
+  background-color: darkorchid;
+  height: 100vh;
 }
