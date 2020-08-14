@@ -1,14 +1,287 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+/* ********************H O M E*************************** */
+/* ********************A B O U T*************************** */
+/* ********************S E R V I C E*************************** */
+/* ********************W O R K*************************** */
+/* ********************C O N T A C T*************************** */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
+@media only screen and (max-width: 1014px) {
+  /* ********************S E R V I C E*************************** */
+  .services {
+    padding: 0 5rem 3%;
+  }
+
+  .service-title {
+    font-size: 1.8rem;
+  }
+  /* ********************W O R K*************************** */
+}
+
+@media only screen and (max-width: 884px) {
+  /* ********************H O M E*************************** */
+  .landing-content-title {
+    font-size: 4rem;
+  }
+
+  /* .navbar{
+    display: none;
+  } */
+  /* ********************A B O U T*************************** */
+  .about-content p {
+    font-size: 1.8rem;
+    width: 80%;
+  }
+  /* ********************S E R V I C E*************************** */
+  .service-content p {
+    font-size: 1.8rem;
+    width: 80%;
+  }
+  /* ********************W O R K*************************** */
+  .projects {
+    padding: 0 10% 10%;
+  }
+
+  .work-subtitle {
+    width: 70%;
+    margin: auto;
+  }
+  /* ********************C O N T A C T*************************** */
+}
+@media only screen and (max-width: 744px) {
+  /* ********************H O M E*************************** */
+  #home {
+    background-position: center center;
+  }
+  /* ********************A B O U T*************************** */
+  #about {
+    background-position: center center;
+  }
+  /* ********************S E R V I C E*************************** */
+  #service {
+    background-position: center center;
+  }
+  /* ********************W O R K*************************** */
+  /* ********************C O N T A C T*************************** */
+  .contacts {
+    padding: 0 8%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* ********************H O M E*************************** */
+  .project-content h1 {
+    font-size: 2rem;
+  }
+
+  .landing-content-title {
+    font-size: 3rem;
+  }
+
+  .landing-content-moto {
+    font-size: 1rem;
+  }
+
+  .landing-content-btn {
+    margin-top: 15%;
+  }
+  /* ********************A B O U T*************************** */
+  /* ********************S E R V I C E*************************** */
+  .service-item {
+    width: 40%;
+  }
+
+  #service {
+    background-position: center center;
+    padding: 20% 0;
+  }
+  /* ********************W O R K*************************** */
+  .work {
+    padding-top: 15%;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .project-content h1,
+  .project-content p {
+    text-align: center;
+  }
+
+  .project-img figure {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* ********************C O N T A C T*************************** */
+  .contacts {
+    padding: 0 3%;
+  }
+
+  .p {
+    width: 70%;
+    margin: auto;
+    font-size: 1.8rem;
+    line-height: 2;
+    text-align: center;
+    padding: 0.5rem 0 3rem;
+  }
+
+  .contact {
+    padding-top: 15%;
+  }
+
+  .form-title h1 {
+    font-size: 2.8rem;
+  }
+
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  .footer {
+    padding: 3rem;
+    font-size: 1.3rem;
+  }
+
+  .address {
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .landing-content-title {
+    font-size: 2.5rem;
+  }
+
+  .landing-content-moto {
+    font-size: 0.7rem;
+  }
+
+  .landing-content-btn a,
+  .contact-btn a {
+    font-size: 1.4rem;
+    padding: 0.7rem 2.3rem;
+  }
+
+  .form-title h1 {
+    font-size: 2rem;
+  }
+
+  .title h1 {
+    font-size: 2.3rem;
+  }
+
+  .work {
+    padding-top: 20%;
+  }
+
+  .contact {
+    padding-top: 25%;
+  }
+
+  #service {
+    background-position: center center;
+    padding: 20% 0 30%;
+  }
+
+  .service-content p {
+    font-size: 1.5rem;
+    width: 95%;
+  }
+
+  .project-img figure {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .service-item {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .c-address {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0 10%;
+  }
+
+  #service {
+    background-position: center center;
+    padding: 30% 0;
+  }
+
+  .work {
+    padding-top: 30%;
+  }
+
+  p,
+  .project-content p,
+  .about-content p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+
+  .contacts {
+    padding: 0;
+  }
+
+  .contact-btn {
+    padding-top: 8%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .form-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .title h1 {
+    font-size: 1.5rem;
+  }
+
+  .landing-content-title {
+    font-size: 1.5rem;
+  }
+
+  .landing-content-moto {
+    font-size: 0.5rem;
+  }
+
+  .landing-content-btn a,
+  .contact-btn a {
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+  }
+
+  .footer{
+    font-size: .5rem;
+  }
+}
