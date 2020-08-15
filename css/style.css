@@ -11,6 +11,16 @@ body {
   font-size: 10px;
 }
 
+.loading{
+  background-image: url('/img/load.gif');
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center center;
+  z-index: 99999;
+}
+
 /* ****************************H O M E P A G E******************* */
 #home {
   background-image: url(../img/homepage.png);
@@ -66,13 +76,13 @@ body {
   color: #c00d99;
 }
 
-.navbar-list span a {
+.navbar-list a{
   font-size: 1.8rem;
   text-decoration: none;
   color: #fff;
 }
 
-.navbar-list span a:hover {
+.navbar-list a span:hover {
   color: #c00d99;
   border-bottom: 1px solid #ccc;
   transition: border-bottom 0.7s ease-in-out;

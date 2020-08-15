@@ -103,33 +103,26 @@
 
   .navbar-list {
     grid-row: 2/3;
-    /* border-bottom: 1px solid #ccc; */
     flex-direction: column;
     display: none;
-    /* height: 50vh;
-    background-color: lightblue;
-    clip-path: circle(100px); */
   }
 
   .active {
     grid-row: 2/3;
-    /* border-bottom: 1px solid #ccc; */
     display: flex;
     flex-direction: column;
-    /* height: 50vh;
-    width: 100%; */
   }
-  
 
-  .navbar-list span {
+  .navbar-list a {
     width: 100%;
     text-align: center;
     border-bottom: 1px solid #ccc;
     padding: 1rem;
   }
-    
-  .navbar-list span:hover {
+
+  .navbar-list a:hover {
     background-color: #c4c4c4;
+    color: #c00d99;
   }
 
   .navbar-list span a {
@@ -159,6 +152,11 @@
     margin-top: 15%;
   }
   /* ********************A B O U T*************************** */
+  .landing-content-btn a,
+  .contact-btn a {
+    font-size: 1.4rem;
+    padding: .8rem 3rem;
+  }
   /* ********************S E R V I C E*************************** */
   .service-item {
     width: 40%;

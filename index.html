@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body onload="myFunction()">
     <div class="loading"></div>
     <section id="home">
       <div class="home">
@@ -26,11 +26,11 @@
             <div class="bars"><i class="fas fa-bars"></i></div>
           </div>
           <div class="navbar-list">
-            <span><a href="#home">Home</a></span>
-            <span><a href="#about">About</a></span>
-            <span><a href="#service">Services</a></span>
-            <span><a href="#work">Portifolio</a></span>
-            <span><a href="#contact">Contact</a></span>
+            <a href="#home"><span>Home</span></a>
+            <a href="#about"><span>About</span></a>
+            <a href="#service"><span>Services</span></a>
+            <a href="#work"><span>Portifolio</span></a>
+            <a href="#contact"><span>Contact</span></a>
           </div>
           <div class="s-media">
             <span
@@ -47,7 +47,9 @@
         <div class="landing-content">
           <div class="landing-content-title"><h1>Volve Lab.</h1></div>
           <div class="landing-content-moto"><h4>We Design Your Desire</h4></div>
-          <div class="landing-content-btn"><a href="#contact">Get in Touch</a></div>
+          <div class="landing-content-btn">
+            <a href="#contact">Get in Touch</a>
+          </div>
         </div>
       </div>
       <a class="scroll-up-btn" href="#home"><i class="fas fa-arrow-up"></i></a>
@@ -168,15 +170,6 @@
       </div>
     </section>
 
-    <!-- <section id="partners">
-      <figure class="partner">
-        <img src="img/Vers.svg" alt="" srcset="" />
-      </figure>
-      <figure class="partner">
-        <img src="img/Nutrisante.svg" alt="" srcset="" />
-      </figure>
-    </section> -->
-
     <section id="contact" class="contact">
       <div class="title wt">
         <h1 class="wt">Ways To Contact Us</h1>
@@ -230,7 +223,13 @@
         <div class="c-form">
           <div class="form-title"><h1>Send us a message</h1></div>
           <div class="form-input">
-            <input type="text" name="name" id="name" placeholder="Your Name" required/>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
             <p class="name-err">Please Enter your name</p>
           </div>
 
@@ -266,6 +265,11 @@
         &copy Copyright - Volve lab | All Rights Reserved
       </div>
     </section>
+    <script>
+      function myFunction() {
+        document.querySelector(".loading").style.display = "none";
+      }
+    </script>
     <script src="js/app.js"></script>
   </body>
 </html>
