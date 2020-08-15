@@ -78,6 +78,10 @@ body {
   transition: border-bottom 0.7s ease-in-out;
 }
 
+.scroll-up-btn{
+  display: none;
+}
+
 .scroll-up-btn i {
   position: fixed;
   bottom: 1rem;

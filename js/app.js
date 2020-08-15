@@ -8,6 +8,14 @@ const mailErr = document.querySelector('.mail-err')
 const messageErr = document.querySelector('.message-err')
 const submitBtn = document.querySelector('#submit-btn')
 
+window.onscroll = function () {
+    if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+        document.querySelector('.scroll-up-btn').style.display = "block"
+    } else {
+        document.querySelector('.scroll-up-btn').style.display = "none"
+    }
+};
+
 barBtn.addEventListener('click', (e) => {
     navbar.classList.toggle('active')
 })
