@@ -103,27 +103,31 @@
 
   .navbar-list {
     grid-row: 2/3;
-    border-bottom: 1px solid #ccc;
-    /* display: flex; */
+    /* border-bottom: 1px solid #ccc; */
     flex-direction: column;
     display: none;
+    /* height: 50vh;
+    background-color: lightblue;
+    clip-path: circle(100px); */
   }
 
   .active {
     grid-row: 2/3;
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; */
     display: flex;
     flex-direction: column;
+    /* height: 50vh;
+    width: 100%; */
   }
   
 
   .navbar-list span {
     width: 100%;
     text-align: center;
-    padding: 1rem;
     border-bottom: 1px solid #ccc;
+    padding: 1rem;
   }
-
+    
   .navbar-list span:hover {
     background-color: #c4c4c4;
   }
@@ -223,6 +227,12 @@
 
   .address {
     padding-top: 1rem;
+  }
+
+  .c-address {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0 10%;
   }
 }
 
