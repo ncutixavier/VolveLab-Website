@@ -12,9 +12,17 @@ barBtn.addEventListener('click', (e) => {
     navbar.classList.toggle('active')
 })
 
+const emailIsValid = email => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+const nameIsValid = name => {
+    return /^[a-zA-Z\s]+$/.test(name);
+}
+
 const validate = (e) => {
 
-    if (name.value == "") {
+    if (!nameIsValid(name.value)) {
         nameErr.style.display = 'inline'
         nameErr.textContent = "Please enter a valid name"
         name.focus()
@@ -23,7 +31,7 @@ const validate = (e) => {
         nameErr.style.display = 'none'
     }
 
-    if (mail.value == "") {
+    if (!emailIsValid(mail.value)) {
         mailErr.style.display = 'inline'
         mailErr.textContent = "Please enter a valid mail"
         return false
