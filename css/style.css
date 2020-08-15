@@ -36,6 +36,10 @@ body {
   margin-left: 7%;
 }
 
+.bars{
+  display: none;
+}
+
 .navbar-logo img {
   width: 100px;
 }
@@ -485,4 +489,8 @@ textarea {
   font-size: 2rem;
   color: #fff;
   background-color: #000;
+}
+
+.active{
+  display: flex;
 }

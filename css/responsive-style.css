@@ -4,22 +4,14 @@
 /* ********************W O R K*************************** */
 /* ********************C O N T A C T*************************** */
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 }
 @media only screen and (max-width: 1014px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
   /* ********************S E R V I C E*************************** */
   .services {
     padding: 0 5rem 3%;
@@ -37,9 +29,6 @@
     font-size: 4rem;
   }
 
-  /* .navbar{
-    display: none;
-  } */
   /* ********************A B O U T*************************** */
   .about-content p {
     font-size: 1.8rem;
@@ -66,6 +55,10 @@
   #home {
     background-position: center center;
   }
+
+  .navbar-list span a {
+    font-size: 1.5rem;
+  }
   /* ********************A B O U T*************************** */
   #about {
     background-position: center center;
@@ -83,6 +76,69 @@
 
 @media only screen and (max-width: 600px) {
   /* ********************H O M E*************************** */
+  .navbar {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar-logo {
+    margin: 0;
+    grid-row: 1/2;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+  }
+
+  .bars {
+    display: block;
+    background: linear-gradient(180deg, #21206a 0%, #c00d99 100%);
+    border-radius: 50%;
+  }
+
+  .bars i {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 1.3rem;
+  }
+
+  .navbar-list {
+    grid-row: 2/3;
+    border-bottom: 1px solid #ccc;
+    /* display: flex; */
+    flex-direction: column;
+    display: none;
+  }
+
+  .active {
+    grid-row: 2/3;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .navbar-list span {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navbar-list span:hover {
+    background-color: #c4c4c4;
+  }
+
+  .navbar-list span a {
+    font-size: 2rem;
+  }
+
+  .s-media {
+    grid-row: 3/4;
+    /* border-bottom: 1px solid #fff; */
+    padding: 1rem;
+    background: linear-gradient(180deg, #21206a 0%, #c00d99 100%);
+  }
+
   .project-content h1 {
     font-size: 2rem;
   }
@@ -281,7 +337,7 @@
     padding: 0.5rem 2rem;
   }
 
-  .footer{
-    font-size: .5rem;
+  .footer {
+    font-size: 0.5rem;
   }
 }
