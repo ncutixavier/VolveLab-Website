@@ -86,13 +86,22 @@
     border-bottom: 1px solid #fff;
     display: flex;
     justify-content: space-between;
-    padding: 0 2%;
+    align-items: center;
+    padding: 0;
+  }
+
+  .navbar-list a span:hover {
+    color: #c00d99;
+    transition: all 0.3s ease-in-out;
   }
 
   .bars {
-    display: block;
+    display: flex;
+    align-items: center;
     background: linear-gradient(180deg, #21206a 0%, #c00d99 100%);
     border-radius: 50%;
+    /* padding-right: 5%; */
+    margin-right: 5%;
   }
 
   .bars i {
@@ -131,7 +140,7 @@
 
   .s-media {
     grid-row: 3/4;
-    /* border-bottom: 1px solid #fff; */
+    justify-content: center;
     padding: 1rem;
     background: linear-gradient(180deg, #21206a 0%, #c00d99 100%);
   }
