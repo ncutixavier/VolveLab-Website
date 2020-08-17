@@ -165,6 +165,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation: moveFromBottom 5s ease-in-out;
 }
 
 .title {
@@ -301,6 +302,18 @@ body {
   justify-content: space-evenly;
   margin: 0% 0 10%;
   align-items: center;
+  animation: moveFromBottom 15s ease-in-out;
+}
+
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0.5;
+    transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 .project-img {
